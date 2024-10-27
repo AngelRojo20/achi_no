@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -33,10 +35,38 @@
 }
 
 @keyframes animate{
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
 
     to{
         opacity: 1;
-        transform: translate(0, 0.1rem);
+        transform: translate(0);
         filter: blur(0);
     }
+}
+
+.titulo{    
+    font-family: 'Anton', sans-serif;
+    top: 35%;
+    color: transparent; /* Se asegura de que el color de texto sea transparente */
+    text-transform: uppercase;
+    background-image: linear-gradient(-250deg, #ff00cc, #3333ff, #ff00cc);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text; /* Necesario para compatibilidad con WebKit (Chrome, Safari) */
+    -webkit-text-fill-color: transparent; /* Transparencia en WebKit */
+    animation: bgText 4s linear infinite;
+    font-size: 3em;
+}
+
+@keyframes bgText {
+        0% {
+            background-position: 0% center; /* El fondo empieza a la izquierda */
+        }
+        100% {
+            background-position: 200% center; /* El fondo se mueve hacia la derecha */
+        }
 }

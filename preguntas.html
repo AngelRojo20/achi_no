@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Preguntas</title>
+    <link rel="stylesheet" href="css/preguntas.css">
+</head>
+<body>
+    <h1>Formulario de Preguntas</h1>
+    <form onsubmit="return calcularPuntuacion()">
+        <!-- Pregunta 1 -->
+        <p>1. What region of Colombia is achira originally from?</p>
+        <input type="radio" id="caribe" name="pregunta1" value="Caribbean">
+        <label for="caribe">Caribbean</label><br>
+        <input type="radio" id="andina" name="pregunta1" value="Andean">
+        <label for="andina">Andean</label><br>
+        <input type="radio" id="pacifica" name="pregunta1" value="Pacific">
+        <label for="pacifica">Pacific</label><br>
+        <input type="radio" id="orinoquia" name="pregunta1" value="Orinoquía">
+        <label for="orinoquia">Orinoquía</label><br>
+
+        <!-- Pregunta 2 -->
+        <p>2. What main ingredients are used to make achira biscuits?</p>
+        <input type="radio" id="trigo" name="pregunta2" value="Wheat flour, butter, and sugar">
+        <label for="trigo">Wheat flour, butter, and sugar</label><br>
+        <input type="radio" id="achira" name="pregunta2" value="Achira flour, fresh cheese, and butter">
+        <label for="achira">Achira flour, fresh cheese, and butter</label><br>
+        <input type="radio" id="maiz" name="pregunta2" value="Corn, cheese, and eggs">
+        <label for="maiz">Corn, cheese, and eggs</label><br>
+        <input type="radio" id="frutas" name="pregunta2" value="Fruits, nuts, and honey">
+        <label for="frutas">Fruits, nuts, and honey</label><br>
+
+        <!-- Pregunta 3 -->
+        <p>3. ¿Qué simboliza ofrecer galletas de achira a los visitantes en Tolima?</p>
+        <input type="radio" id="riqueza" name="pregunta3" value="Riqueza">
+        <label for="riqueza">Riqueza</label><br>
+        <input type="radio" id="hospitalidad" name="pregunta3" value="Hospitalidad">
+        <label for="hospitalidad">Hospitalidad</label><br>
+        <input type="radio" id="celebracion" name="pregunta3" value="Celebración">
+        <label for="celebracion">Celebración</label><br>
+        <input type="radio" id="competencia" name="pregunta3" value="Competencia">
+        <label for="competencia">Competencia</label><br>
+
+        <!-- Pregunta 4 -->
+        <p>4. ¿Cuál es la fecha de celebración del Día de la Achira Tolimense?</p>
+        <input type="radio" id="mayo" name="pregunta4" value="1 de mayo">
+        <label for="mayo">1 de mayo</label><br>
+        <input type="radio" id="junio" name="pregunta4" value="25 de junio">
+        <label for="junio">25 de junio</label><br>
+        <input type="radio" id="agosto" name="pregunta4" value="15 de agosto">
+        <label for="agosto">15 de agosto</label><br>
+        <input type="radio" id="diciembre" name="pregunta4" value="10 de diciembre">
+        <label for="diciembre">10 de diciembre</label><br>
+
+        <!-- Pregunta 5 -->
+        <p>5. ¿Qué propiedades medicinales se le atribuyen a la achira?</p>
+        <input type="radio" id="fiebre" name="pregunta5" value="Aliviar la fiebre">
+        <label for="fiebre">Aliviar la fiebre</label><br>
+        <input type="radio" id="reumatismo" name="pregunta5" value="Tratar el reumatismo y la mastitis">
+        <label for="reumatismo">Tratar el reumatismo y la mastitis</label><br>
+        <input type="radio" id="digestión" name="pregunta5" value="Mejorar la digestión">
+        <label for="digestión">Mejorar la digestión</label><br>
+        <input type="radio" id="ansiedad" name="pregunta5" value="Combatir la ansiedad">
+        <label for="ansiedad">Combatir la ansiedad</label><br>
+
+        <br>
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Mostrar resultado -->
+    <p id="resultado"></p>
+    
+    <script src="js/preguntas.js"></script>
+</body>
+</html>
+
