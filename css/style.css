@@ -119,3 +119,22 @@ body{
     position: absolute;
     bottom: 2rem;
 }
+
+.transparent {
+    background-color: rgba(128, 128, 128, 0.25); 
+    padding: 0.2em 0.5em;
+    border-radius: 4px; 
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+.shadow-btn {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: box-shadow 0.3s ease; 
+  }
+
+  .shadow-btn:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6); 
+  }
